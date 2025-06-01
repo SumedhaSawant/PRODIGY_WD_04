@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sumedha Sawant | My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="container nav-container">
+      <div class="logo">My Portfolio</div> <!-- changed here -->
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ <header id="home" class="hero">
+  <img
+    src="image.jpg"
+    alt="Sumedha Sawant"
+    class="profile-pic"
+  />
+  <h1>Sumedha Sawant</h1>
+  <h2>I am <span id="typewriter"></span></h2>
+  <p>Passionate about creating responsive and interactive web applications.</p>
+</header>
+
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>
+      I completed my BSc IT from Mumbai University in 2024 and am currently pursuing my MSc IT from Mumbai University, expected to complete in 2026. 
+      I am a dedicated web developer with skills in HTML, CSS, JavaScript, and more.
+    </p>
+  </section>
+
+  <section id="skills" class="section fade-in">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar" data-level="95%"><div class="fill"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar" data-level="90%"><div class="fill"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar" data-level="85%"><div class="fill"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">React</div>
+        <div class="skill-bar" data-level="80%"><div class="fill"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Node.js</div>
+        <div class="skill-bar" data-level="70%"><div class="fill"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Tic Tac Toe Web Application</h3>
+        <p>A classic Tic Tac Toe game built with HTML, CSS, and JavaScript featuring an interactive UI and two-player mode.</p>
+      </div>
+      <div class="project-card">
+        <h3>Responsive Landing Page</h3>
+        <p>A clean, modern responsive landing page designed for a fictional product with mobile-first design principles.</p>
+      </div>
+      <div class="project-card">
+        <h3>Stopwatch Web Application</h3>
+        <p>A functional stopwatch built with JavaScript supporting start, pause, and reset features with millisecond accuracy.</p>
+      </div>
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A weather forecast app fetching live data from a weather API, showing current conditions and 5-day forecast.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required minlength="2" />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required minlength="10"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <div id="form-message"></div>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Sumedha Sawant. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
